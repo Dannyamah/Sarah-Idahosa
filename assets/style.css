@@ -5,6 +5,83 @@
     gap: 12px;
 }
 
+.fade{
+    border-radius: 8px;
+    border: 0.6px solid rgba(0, 0, 0, 0.10);
+    background: rgba(244, 244, 244, 0.40);
+}
+
+.panel-tab{
+    border-radius: 8px; 
+    border: 0.6px solid rgba(0, 0, 0, 0.10); 
+    background: rgba(244, 244, 244, 0.40);
+} 
+
+.gallery-pic{
+    border-radius: 15px;
+}
+/* styles.css */
+
+/* Add your existing styles for the grid if any */
+
+/* styles.css */
+
+/* styles.css */
+
+/* styles.css */
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .gallery-pic {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .gallery-item:hover .gallery-pic {
+    transform: scale(1.1);
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .gallery-item:hover .overlay {
+    opacity: 1;
+  }
+  
+  .icon {
+    margin: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    background-color: #3E64FF; /* Set background color to blue */
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+  .icon:hover {
+    transform: scale(1.2);
+  }
+  
+  .jpg-text {
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+
 @media (max-width: 576px) {
     .background {
         background: url('img/hero-img.jfif') no-repeat center center / cover;
