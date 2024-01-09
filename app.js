@@ -28,4 +28,18 @@ document.addEventListener("DOMContentLoaded", function () {
       pic.appendChild(overlay);
     });
   });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        var readMoreBtn = document.querySelector('.read-more-btn');
+        var hiddenCards = document.querySelectorAll('.card-hidden');
+
+        readMoreBtn.addEventListener('click', function () {
+            hiddenCards.forEach(function (card) {
+                card.style.display = 'flex'; // Show the hidden cards
+            });
+
+            readMoreBtn.style.display = 'none'; // Hide the "Read More" button
+        });
+    });
+
   
