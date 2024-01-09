@@ -226,6 +226,8 @@ links{
   display: none;
 }
 
+/* MOBILE VIEW */
+
 @media only screen and (max-width: 576px) {
   html{
     width: 100%;
@@ -237,7 +239,42 @@ links{
     font-size: 12px;
   }
 
+  .small-com{
+    font-size: 15px;
+  }
+
   .card-img-top{
     
+  }
+}
+
+
+@media (max-width: 768px) {
+
+
+
+  #home {
+    background: url('img/hero-img.jfif') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 544px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .image-column {
+    display: none;
+  }
+}
+
+/* TABLET VIEW */
+
+@media (min-width: 768px) {
+  .img-md-right {
+    display: flex;
+    justify-content: flex-end;
   }
 }
