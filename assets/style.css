@@ -9,6 +9,15 @@ html{
     gap: 12px;
 }
 
+.resume-btn{
+  border-radius: 10.8px; 
+  height: 54px; 
+  padding: 14.4px 28.8px; 
+  gap: 7.2px; 
+  background: #3E64FF; 
+  text-decoration: none;
+}
+
 .card {
   position: relative;
   overflow: hidden;
@@ -60,15 +69,6 @@ html{
 .gallery-pic{
     border-radius: 15px;
 }
-/* styles.css */
-
-/* Add your existing styles for the grid if any */
-
-/* styles.css */
-
-/* styles.css */
-
-/* styles.css */
 
 .gallery-item {
     position: relative;
@@ -202,7 +202,7 @@ footer{
   gap: 4px;
 }
 
-links{
+.links{
   display: inline-flex;
   
   align-items: flex-start;
@@ -251,8 +251,6 @@ links{
 
 @media (max-width: 768px) {
 
-
-
   #home {
     background: url('img/hero-img.jfif') no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -265,6 +263,7 @@ links{
     align-items: center;
     justify-content: center;
   }
+
   .image-column {
     display: none;
   }
@@ -298,7 +297,16 @@ links{
   .extra-card {
     animation-duration: 0.5s;
   }
-  
+
+  .tab-text{
+    color: black;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .panel-tab{
+    font-size: 8px;
+  }
   
 }
 
