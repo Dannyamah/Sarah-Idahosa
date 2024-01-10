@@ -42,4 +42,31 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+    document.getElementById('toggle-cards').addEventListener('click', function() {
+      var extraCards = document.querySelectorAll('.extra-card');
+      var toggleText = document.getElementById('toggle-text');
+      if (toggleText.innerHTML === 'See More') {
+        // Show the extra cards with a slide-down animation and change the button text
+        extraCards.forEach(function(card) {
+          card.style.animationName = 'slideDown';
+          card.style.display = 'block';
+        });
+        toggleText.innerHTML = 'See Less';
+      } else {
+        // Hide the extra cards with a slide-up animation and change the button text
+        extraCards.forEach(function(card) {
+          card.style.animationName = 'slideUp';
+          setTimeout(function() {
+            card.style.display = 'none';
+          }, 500); // Match this with the animation-duration in your CSS
+        });
+        toggleText.innerHTML = 'See More';
+      }
+      // Move the button to the end of the container
+      this.parentNode.appendChild(this);
+    });
+    
+    
+    
+
   
