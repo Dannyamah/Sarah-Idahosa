@@ -29,6 +29,35 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  function downloadImage(imgPath) {
+    let link = document.createElement('a');
+    link.href = imgPath;
+    link.download = 'download';
+    link.click();
+}
+
+function viewJpg(imgPath) {
+  let modal = document.getElementById("myModal");
+  let img = document.getElementById("img01");
+  let span = document.getElementsByClassName("close")[0]; // Add this line
+
+  img.src = imgPath;
+  modal.style.display = "block";
+  setTimeout(function() {
+      modal.style.opacity = "1";
+  }, 50); // This will start the fade-in effect after 50ms
+
+  span.onclick = function() {
+      modal.style.opacity = "0";
+      setTimeout(function() {
+          modal.style.display = "none";
+      }, 500); // This will hide the modal after the fade-out effect is finished
+  }
+}
+
+
+
+
     document.addEventListener("DOMContentLoaded", function () {
         var readMoreBtn = document.querySelector('.read-more-btn');
         var hiddenCards = document.querySelectorAll('.card-hidden');

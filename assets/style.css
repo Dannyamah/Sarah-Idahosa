@@ -67,34 +67,38 @@ html{
 } 
 
 .gallery-pic{
-    border-radius: 15px;
+  border-radius: 15px;
 }
 
 .gallery-item {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .gallery-pic {
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .gallery-item:hover .gallery-pic {
-    transform: scale(1.1);
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-  }
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-pic {
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover .gallery-pic {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
   
   .gallery-item:hover .overlay {
     opacity: 1;
@@ -226,28 +230,13 @@ footer{
   display: none;
 }
 
-/* MOBILE VIEW */
-
-@media only screen and (max-width: 576px) {
-  html{
-    width: 100%;
-    margin: 0;
-    overflow-x: hidden;
-  }
-
-  .font12{
-    font-size: 12px;
-  }
-
-  .small-com{
-    font-size: 15px;
-  }
-
-  .card-img-top{
-    
-  }
+.modal {
+  /* ...existing styles... */
+  transition: opacity 0.5s ease;
 }
 
+
+/* MOBILE VIEW */
 
 @media (max-width: 768px) {
 
@@ -305,8 +294,44 @@ footer{
   }
 
   .panel-tab{
-    font-size: 8px;
+    font-size: 10px;
   }
+
+  .gallery-item{
+    width: 170px;
+    max-height: 150px;
+  }
+
+  /* .gallery-pic{
+    width: 150px;
+    max-height: 150px;
+  } */
+
+  .overlay {
+    opacity: 1;
+}
+}
+
+.icon {
+margin: 10px;
+cursor: pointer;
+color: white;
+font-size: 18px;
+background-color: #3E64FF; /* Set background color to blue */
+border-radius: 5px;
+padding: 5px;
+}
+
+.icon:hover {
+transform: scale(1.2);
+}
+
+.jpg-text {
+background-color: white;
+color: black;
+padding: 5px;
+border-radius: 5px;
+}
   
 }
 
