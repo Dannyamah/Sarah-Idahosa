@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  // DOWNLOAD FROM GALLERY
   function downloadImage(imgPath) {
     let link = document.createElement('a');
     link.href = imgPath;
