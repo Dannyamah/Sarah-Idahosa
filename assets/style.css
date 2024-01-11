@@ -350,10 +350,6 @@ footer{
     justify-content: center;
     align-items: center;
   }
-
-  .img-div{
-    
-  }
   
   .testimony-img {
     width: 80%;
@@ -361,19 +357,19 @@ footer{
   }
   
   .testimony-text {
-    font-size: 5.83px;
+    font-size: 7px;
     text-align: justify;
     padding-top: 10px;
   }
   
   .test-name {
-    font-size: 5.2px;
+    font-size: 6px;
     font-weight: 700;
     display: block;
   }
   
   .test-title {
-    font-size: 4.37px;
+    font-size: 5.5px;
     font-weight: 400;
     display: block;
   }
