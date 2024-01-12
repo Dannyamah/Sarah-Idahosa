@@ -1,5 +1,17 @@
 // scripts.js
 
+// $(document).ready(function () {
+//   $('.navbar-toggler').click(function () {
+//     $(this).toggleClass('open');
+//   });
+// });
+
+$('.navbar-toggler').click(function () {
+  $('.svg-wrapper').toggleClass('open');
+});
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const galleryPics = document.querySelectorAll(".gallery-pic");
   
