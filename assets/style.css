@@ -318,8 +318,89 @@ footer{
     justify-content: center;
   }
 
+  .hero-div{
+    width: 296px;
+  }
+
+  .intro-head{
+    font-size: 14.22px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: justify;
+  }
+
+  .hello-there{
+    font-size: 16px;
+    font-weight: 600;
+
+  }
+
+  .sarah{
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 120.1%;
+  }
+
+  .sayrah{
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .hero-call{
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .hero-text{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+
+  .hero-bold{
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .hi-there{
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 23px;
+  }
+
+  .about-img{
+    width: 100% !important;
+    height: 333px !important;
+  }
+
+  .font12{
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .img-md-right {
+    position: relative;
+    right: -50px;
+  }
+
+  .comm-head{
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 140%;
+  }
+
+  .comm-position{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 140%;
+  }
+
   .image-column {
     display: none;
+  }
+
+  .feature-text{
+    font-size: 6px;
   }
 
   .extra-card {
