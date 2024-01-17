@@ -1,13 +1,13 @@
 html{
   scroll-behavior: smooth;
 }
-
 /* .navbar-toggler>.close {
   display:inline;
 }
 .navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
   display:none;
 } */
+
 
 .svg-wrapper.open .line1 {
   transform: rotate(45deg);
@@ -161,7 +161,7 @@ html{
   .jpg-text {
     background-color: white;
     color: black;
-    padding: 5px;
+    padding: 3px;
     border-radius: 5px;
   }
 
@@ -377,9 +377,24 @@ footer{
 .foot-div2{
   padding-top: 104px;
 }
+
+
 /* MOBILE VIEW */
 
 @media (max-width: 768px) {
+
+  .hero-div{
+    position: relative;
+    left: -20px;
+  }
+
+  .navbar-nav a {
+    border-bottom: 2px solid #3E64FF80;
+    /* width: 100%; */
+    border-radius: 0 0 10px 10px;
+    gap: 8px;
+  }
+  
 
   .lg-contact{
     display: none;
@@ -573,7 +588,7 @@ footer{
   .jpg-text {
   background-color: white;
   color: black;
-  padding: 5px;
+  padding: 2px;
   border-radius: 5px;
   }
 
@@ -587,6 +602,8 @@ footer{
   .testimony-img {
     width: 80%;
     height: auto;
+    position: relative;
+    align-items: center;
   }
   
   .testimony-text {

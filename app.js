@@ -1,10 +1,24 @@
 // scripts.js
 
-// $(document).ready(function () {
-//   $('.navbar-toggler').click(function () {
-//     $(this).toggleClass('open');
-//   });
-// });
+$(document).ready(function () {
+  $('.navbar-nav>li>a').on('click', function(){
+      $('.navbar-collapse').collapse('hide');
+  });
+});
+
+
+// Get the SVG element
+var svg = document.querySelector(".svg-wrapper svg");
+
+// Get the button element
+var button = document.querySelector(".navbar-toggler");
+
+// Add a click event listener to the button
+button.addEventListener("click", function() {
+  // Toggle the "open" class on the SVG element
+  svg.classList.toggle("open");
+});
+
 
 $('.navbar-toggler').click(function () {
   $('.svg-wrapper').toggleClass('open');
@@ -122,6 +136,14 @@ function viewJpg(imgPath) {
     });
     
     
-    
+    $.ajax({
+      url: "https://formsubmit.co/ajax/your@email.com",
+      method: "POST",
+      data: {
+          name: "FormSubmit",
+          message: "I'm from Devro LABS"
+      },
+      dataType: "json"
+  });
 
   
